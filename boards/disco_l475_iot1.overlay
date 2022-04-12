@@ -1,0 +1,20 @@
+/*
+ * Copyright (c) 2022, Rafael Dias
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Application overlay for simcom 7000 modem driver builds
+ *
+ * Names in this file should be chosen in a way that won't conflict
+ * with real-world devicetree nodes, to allow these tests to run on
+ * (and be extended to test) real hardware.
+ */
+
+&uart4 {
+  sim7000 {
+    compatible = "simcom,sim7000";
+    label = "SIM7000";
+    mdm-power-gpios = <&gpioa 6 (GPIO_PULL_UP | GPIO_ACTIVE_HIGH)>;
+  };
+};
+
