@@ -12,6 +12,7 @@
 
 &uart4 {
   sim7000 {
+    status = "okay";
     compatible = "simcom,sim7000";
     label = "SIM7000";
     mdm-power-gpios = <&gpioa 6 (GPIO_PULL_UP | GPIO_ACTIVE_HIGH)>;
