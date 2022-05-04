@@ -9,7 +9,7 @@
  * with real-world devicetree nodes, to allow these tests to run on
  * (and be extended to test) real hardware.
  */
-
+  
 &uart4 {
   sim7000 {
     status = "okay";
